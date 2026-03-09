@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gtd-agents"
+version = "0.1.0"
+description = "GTD powered by agents — automate clarify, organize, review"
+requires-python = ">=3.11"
+dependencies = [
+    "click>=8.1",
+]
+
+[project.scripts]
+gtd = "gtd_agents.cli:cli"
+
+[tool.setuptools.packages.find]
+include = ["gtd_agents*"]
