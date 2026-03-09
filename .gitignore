@@ -5,3 +5,6 @@ dist/
 build/
 .venv/
 *.db
+.runtime/
+.claude/
+.logs/
